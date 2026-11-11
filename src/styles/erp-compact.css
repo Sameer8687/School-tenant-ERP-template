@@ -1,0 +1,172 @@
+/* ============================================
+   EDUCORE / OLIVE ERP — HARMONIZED COMPACT STYLES
+   ============================================ */
+
+.erp-compact {
+    --erp-blue: #257CBE;
+    --erp-line: #E7E7E4;
+    --erp-canvas: #F7F7F5;
+
+    width: 100%;
+    min-width: 0;
+    color: var(--ink);
+    font-size: 12.5px;
+}
+
+/* PAGE SPACING */
+.erp-compact.space-y-4 > :not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.erp-compact h1 {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.erp-compact h2 {
+    font-size: 14.5px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.erp-compact h3 {
+    font-size: 12.5px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+/* PROTECT CARD LAYOUT */
+.erp-compact [data-slot="card"] {
+    min-width: 0;
+    border-radius: 14px;
+    border-color: var(--line);
+    background: var(--card);
+    box-shadow: var(--shadow-sm);
+}
+
+.erp-compact [data-slot="card-content"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.erp-compact .min-w-0 {
+    min-width: 0;
+}
+
+/* SAFE CARD RADIUS */
+.erp-compact .rounded-\[28px\],
+.erp-compact .rounded-\[24px\],
+.erp-compact .rounded-\[22px\],
+.erp-compact .rounded-\[20px\] {
+    border-radius: 14px;
+}
+
+/* COMPACT METRICS */
+.erp-compact [data-slot="card"] .text-\[32px\],
+.erp-compact [data-slot="card"] .text-\[30px\] {
+    font-size: 22px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+
+/* FORMS */
+.erp-compact input:not([type="checkbox"]):not([type="radio"]),
+.erp-compact select {
+    font-size: 12.5px;
+    border-radius: 9px;
+    border-color: var(--line);
+}
+
+.erp-compact textarea {
+    font-size: 12.5px;
+    border-radius: 9px;
+    border-color: var(--line);
+}
+
+.erp-compact button {
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+/* TABLES */
+.erp-compact table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+}
+
+.erp-compact table th {
+    font-size: 10.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--ink-3);
+    white-space: nowrap;
+}
+
+.erp-compact table td {
+    font-size: 12px;
+}
+
+/* CARD HOVERS */
+.erp-compact [data-slot="card"]:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+/* LIGHT HERO SYSTEM FOR CONSISTENT HEADER SURFACE */
+.erp-compact--attendance > section:first-child,
+.erp-compact--fees > section:first-child,
+.erp-compact--examinations > section:first-child,
+.erp-compact--staff > section:first-child,
+.erp-compact--library > section:first-of-type,
+.erp-compact--reports > section:first-of-type,
+.erp-compact--settings > section:first-of-type {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: var(--ink) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 16px !important;
+    padding: 15px 18px !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.erp-compact--attendance > section:first-child > .pointer-events-none,
+.erp-compact--fees > section:first-child > .pointer-events-none,
+.erp-compact--examinations > section:first-child > .pointer-events-none,
+.erp-compact--staff > section:first-child > .pointer-events-none,
+.erp-compact--library > section:first-of-type > .pointer-events-none,
+.erp-compact--reports > section:first-of-type > .pointer-events-none,
+.erp-compact--settings > section:first-of-type > .pointer-events-none {
+    display: none !important;
+}
+
+.erp-compact--attendance > section:first-child h1,
+.erp-compact--fees > section:first-child h1,
+.erp-compact--examinations > section:first-child h1,
+.erp-compact--staff > section:first-child h1,
+.erp-compact--library > section:first-of-type h1,
+.erp-compact--reports > section:first-of-type h2,
+.erp-compact--settings > section:first-of-type h2 {
+    color: var(--ink) !important;
+    font-size: 19px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.erp-compact--attendance > section:first-child p,
+.erp-compact--fees > section:first-child p,
+.erp-compact--examinations > section:first-child p,
+.erp-compact--staff > section:first-child p,
+.erp-compact--library > section:first-of-type p,
+.erp-compact--reports > section:first-of-type p,
+.erp-compact--settings > section:first-of-type p {
+    color: var(--ink-2) !important;
+    font-size: 12px;
+}

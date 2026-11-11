@@ -1,0 +1,169 @@
+/* ==========================================
+   OLIVE PLATFORM — COMPACT PREMIUM UI
+   Scoped to Super Admin only
+   ========================================== */
+
+.platform-compact {
+    --platform-primary: #257cbe;
+    --platform-border: #e7ecf2;
+    font-size: 12px;
+}
+
+/* HEADER */
+
+.platform-compact>header>div {
+    min-height: 56px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.platform-compact>header .size-11 {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #edf5fb;
+    color: #257cbe;
+}
+
+/* PAGE CONTAINER */
+
+.platform-compact>main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* PAGE TITLE */
+
+.platform-compact>main>div:first-child h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.platform-compact>main>div:first-child p {
+    font-size: 11px;
+}
+
+/* METRIC CARDS: DIRECT GRID CHILDREN ONLY */
+
+.platform-compact>main>.grid.grid-cols-2>.group {
+    min-height: 92px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, .035);
+    transform: none;
+}
+
+.platform-compact>main>.grid.grid-cols-2>.group:hover {
+    transform: none;
+    border-color: #bed8eb;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, .05);
+}
+
+.platform-compact>main>.grid.grid-cols-2>.group .size-11 {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+.platform-compact>main>.grid.grid-cols-2>.group .size-11 svg {
+    width: 17px;
+    height: 17px;
+}
+
+.platform-compact>main>.grid.grid-cols-2>.group .text-\[30px\] {
+    font-size: 21px;
+    line-height: 27px;
+    margin-top: 6px;
+}
+
+.platform-compact>main>.grid.grid-cols-2>.group .mt-3 {
+    margin-top: 6px;
+}
+
+/* PANEL CARDS */
+
+.platform-compact [data-slot="card"] {
+    border-radius: 10px;
+    border-color: #e7ecf2;
+    box-shadow: 0 1px 4px rgba(15, 23, 42, .035);
+}
+
+/* Protect nested card layout and padding */
+
+.platform-compact [data-slot="card-content"] {
+    min-width: 0;
+}
+
+/* PANELS: TITLE ROWS */
+
+.platform-compact [data-slot="card"]>[data-slot="card-content"]>.border-b {
+    padding: 12px 14px;
+}
+
+.platform-compact [data-slot="card"]>[data-slot="card-content"]>.border-b h2 {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.platform-compact [data-slot="card"]>[data-slot="card-content"]>.border-b p {
+    font-size: 11px;
+}
+
+/* FORMS */
+
+.platform-compact input:not([type="checkbox"]):not([type="radio"]),
+.platform-compact select {
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.platform-compact button {
+    font-size: 11px;
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease;
+}
+
+/* TABLES */
+
+.platform-compact table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.platform-compact table th {
+    font-size: 10px;
+    color: #64748b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.platform-compact table td {
+    font-size: 11px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.platform-compact table tbody tr:hover {
+    background: #f8fbfe;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+    .platform-compact>main {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .platform-compact>main>div:first-child h2 {
+        font-size: 18px;
+    }
+
+    .platform-compact>main>.grid.grid-cols-2>.group {
+        min-height: 84px;
+        padding: 10px;
+    }
+}
